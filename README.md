@@ -32,6 +32,6 @@ functions
 2. new user()
 3. show user()
 4. place order() -> fetch item()
-5. view order()
+5. view orders()
 
 /////////////////////////////////////
