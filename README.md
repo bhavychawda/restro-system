@@ -18,6 +18,7 @@ address
 2. order table
 
 ORDER id
+cust id
 item list
 total bill
 type of payment
