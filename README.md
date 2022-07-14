@@ -18,8 +18,8 @@ address
 
 2. order table
 
-item id
-quantity
+ORDER id
+item list
 total bill
 type of payment
 
