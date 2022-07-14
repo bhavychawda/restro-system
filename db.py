@@ -29,10 +29,17 @@ database="RESTRO"
 )
 mydbcursor= mydb.cursor()
 
-# CREATE TABLES
-# USER TABLE
-# mydbcursor.execute("CREATE TABLE USER(CUSTID INT PRIMARY KEY,NAME VARCHAR(255),PHONE CHAR(10),ADDRESS VARCHAR(255))")
-# #MENU TABLE
-# mydbcursor.execute("CREATE TABLE MENU(ITEM_ID INT PRIMARY KEY,ITEM_NAME VARCHAR(255),PRICE INT )")
-# ORDER TABLE
-mydbcursor.execute("CREATE TABLE ORDERS(ORDER_ID INT PRIMARY KEY,UNIT INT,TOTAL_BILL INT,PAYMENT_MODE VARCHAR(255),ITEM_LIST VARCHAR(255) )")
+# # CREATE TABLES
+# # USER TABLE
+# # mydbcursor.execute("CREATE TABLE USER(CUSTID INT PRIMARY KEY,NAME VARCHAR(255),PHONE CHAR(10),ADDRESS VARCHAR(255))")
+# # #MENU TABLE
+# # mydbcursor.execute("CREATE TABLE MENU(ITEM_ID INT PRIMARY KEY,ITEM_NAME VARCHAR(255),PRICE INT )")
+# # ORDER TABLE
+# mydbcursor.execute("CREATE TABLE ORDERS(ORDER_ID INT PRIMARY KEY,UNIT INT,TOTAL_BILL INT,PAYMENT_MODE VARCHAR(255),ITEM_LIST VARCHAR(255) )")
+
+# ****************************************************************************************************************************************
+
+mydbcursor.execute("ALTER TABLE orders DROP UNIT")
+mydbcursor.execute("ALTER TABLE orders MODIFY COLUMN ORDER_ID INT AUTO_INCREMENT")
+mydbcursor.execute("ALTER TABLE orders ADD cust_id INT")
+mydbcursor.execute("ALTER TABLE orders ADD cust_id INT")
