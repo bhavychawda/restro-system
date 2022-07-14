@@ -1,0 +1,25 @@
+body {
+    background:#171624;
+    font-family: "Lato", sans-serif;
+  }
+  
+  :root {
+    --primary: #94618e;
+  }
+  
+  .justify {
+    text-align: justify;
+  }
+  
+  .text-purple {
+    color: var(--primary);
+  }
+  
+  .bg-purple {
+    background-color:#1d1f2f;
+    color: white;
+  }
+  .row{
+    text-align:center;
+  }
+  
